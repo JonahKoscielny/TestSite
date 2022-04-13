@@ -1,0 +1,512 @@
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599000, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598000, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599700, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599000, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599900, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3699900, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599900, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599500, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+a=ans$par[1]; b=ans$par[2]
+s=1:200000
+plot(s,(a*s)/(b+s), type="l")
+points(Sobs,Robs,pch=19)
+para0=c(3599550, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 10000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 9000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 9890)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 9850)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 9810)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3599556, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+a=ans$par[1]; b=ans$par[2]
+s=1:200000
+plot(s,(a*s)/(b+s), type="l")
+points(Sobs,Robs,pch=19)
+para0=c(3598556, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598656, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598916, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598956, 9750)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3498956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3198956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3898956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3998956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(4998956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(8998956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(2998956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(2998956, 5000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+Sobs=c(
+1599,
+1368,
+1428,
+1187,
+963,
+907,
+882,
+810,
+627,
+604,
+606,
+479,
+424,
+285,
+159,
+93,
+109,
+141,
+270,
+373,
+414,
+334,
+278,
+303,
+290,
+299,
+332,
+290)
+# Recruits (thousands of fish)
+Robs=c(
+1038056,
+1194871,
+864145,
+728326,
+667958,
+738858,
+595613,
+254561,
+140438,
+137060,
+233109,
+417650,
+342479,
+300363,
+152275,
+160671,
+359797,
+320664,
+349967,
+432460,
+338626,
+157808,
+129970,
+160619,
+182303,
+95684,
+37065,
+36739)
+#
+# Plot the data.
+plot(Sobs,Robs,pch=19)
+# As it doesn't seem to reach an asympotote, we will
+# initially guess that the parameters are 10 million and 10 thousand:
+para0=c(10000000, 10000)
+# A. Estimate parameters by minimizing SSE...
+SSE=function(para) {
+Rpred=model(Sobs,para)
+return(sum((Rpred-Robs)^2))
+}
+ans=nlminb(para0, SSE)
+ans
+# check for convergence (code=0) or an error
+ans$convergence
+ans$message
+# So, it did not converge. Sometimes, especially with numerical
+# data minimizing the log of the objective function (here SSE)
+# will be more numerically stable. We can define a new function
+# to help without recoding SSE from scratch...
+logSSE=function(para) { log(SSE(para)) } # quick function def.
+# B. Now minimize the new objective function and check convergence...
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+# It should have converged. But does that mean that we have a good
+# answer? If we check, it seems to have converged after a single
+# iteration! Unlikely...
+ans$iterations
+# Just because a function or program provides an answer, this does
+# not mean that it is correct. You should know what, generally,
+# you are expecting, so that you can inspect the quality of the
+# solution. Here, optimizer convergence and the iteration behaviour
+# are obvious things to check. Examining the estimated model in
+# comparison to the original data is also insightful.
+# What are the parameter estimates (a and b) and the minimum SS for this
+# solution?  You can plot the Beverton-Holt model solution with the data
+# used to estimate it with the following lines:
+a=ans$par[1]; b=ans$par[2]
+s=1:200000
+plot(s,(a*s)/(b+s), type="l")
+points(Sobs,Robs,pch=19)
+a=0.8;b=1500
+N=rep(0,100); N[1]=200;
+for (i in 2:100) {
+N[i]=N[i-1]*exp(a*(1-(N[i-1]/b)))+rnorm(1,0,50)
+}
+R=N[2:100];S=N[1:99]
+plot(S,R,type='b')
+title(main = "process error")
+para0=c(3598956, 5000)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+para0=c(3598956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+a=ans$par[1]; b=ans$par[2]
+s=1:200000
+plot(s,(a*s)/(b+s), type="l")
+points(Sobs,Robs,pch=19)
+a=0.8;b=1500
+S=seq(100,20000,100); R=rep(0,100)
+for (i in 1:200) {
+R[i]=S[i]*exp(a*(1-(S[i]/b)))
+}
+plot(S,R,type='l')
+lines(S,S, lty=3)
+a=0.8;b=1500
+N=rep(0,10); N[1]=200;
+for (i in 2:10) {
+N[i]=N[i-1]*exp(a*(1-(N[i-1]/b)))
+}
+R=N[2:10];S=N[1:9]
+plot(S,R,type='b')
+title(main = "10 time steps")
+a=0.8;b=1500
+N=rep(0,100); N[1]=200;
+for (i in 2:100) {
+N[i]=N[i-1]*exp(a*(1-(N[i-1]/b)))
+}
+R=N[2:100];S=N[1:99]
+plot(S,R,type='b')
+title(main = "100 time steps")
+a=0.8;b=1500
+N=rep(0,100); N[1]=200;
+for (i in 2:100) {
+N[i]=N[i-1]*exp(a*(1-(N[i-1]/b)))+rnorm(1,0,50)
+}
+R=N[2:100];S=N[1:99]
+plot(S,R,type='b')
+title(main = "process error")
+model=function(S,para) {
+a=para[1]
+b=para[2]
+R=(a*S)/(b+S)
+return(R)
+}
+#     We can use explicit least square minimization to determine
+#     parameter estimates for the following simulated data:
+Ssim = runif(20,1,10000)
+set.seed(12345)   # set seed to fix random sequence between runs
+Rsim = model(Ssim, c(150000, 100)) + rnorm(20,0,10000)
+plot(Ssim, Rsim, pch=19)
+# Now, pretend that you don't know the parameter values. From the plot,
+# you could guess at some initial values and plot to check...
+a = 140000; b = 30
+lines(1:10000, a*(1:10000)/(b+(1:10000)), lty=3)
+# That is close enough to start...
+para0=c(140000, 30)
+# Define the object function (to minimize)...
+SSE=function(para) {   # use Ssim, Rsim from the global workspace
+Rpred=model(Ssim,para)
+return(sum((Rpred-Rsim)^2))
+}
+# We can seek a minimum least-squares estimate of parameters using
+# nlminb() for non-linear minimization. There are many
+# options (see the help file), but we will stick with the defaults
+# (for now) and provide only the error function and initial
+# parameter estimates.
+ans=nlminb(para0, SSE)
+ans
+# Here the answer converged (code=0) in 7 iterations. This is a good
+# estimation. Finally, look at the estimates and plot the result:
+a=ans$par[1]
+b=ans$par[2]
+lines(1:10000, a*(1:10000)/(b+(1:10000)), lty=1)
+a;b
+# Do the estimated parameters appear to improve the fit? How?
+#
+rm(a,b) # remove values from the workspace to avoid confusion
+#
+# And we can repeat this for some real data:
+#
+# NAFO 2J3KL COD 1962-1989
+# Spawners (thousand tonnes SSB)
+Sobs=c(
+1599,
+1368,
+1428,
+1187,
+963,
+907,
+882,
+810,
+627,
+604,
+606,
+479,
+424,
+285,
+159,
+93,
+109,
+141,
+270,
+373,
+414,
+334,
+278,
+303,
+290,
+299,
+332,
+290)
+# Recruits (thousands of fish)
+Robs=c(
+1038056,
+1194871,
+864145,
+728326,
+667958,
+738858,
+595613,
+254561,
+140438,
+137060,
+233109,
+417650,
+342479,
+300363,
+152275,
+160671,
+359797,
+320664,
+349967,
+432460,
+338626,
+157808,
+129970,
+160619,
+182303,
+95684,
+37065,
+36739)
+#
+# Plot the data.
+plot(Sobs,Robs,pch=19)
+# As it doesn't seem to reach an asympotote, we will
+# initially guess that the parameters are 10 million and 10 thousand:
+para0=c(10000000, 10000)
+# A. Estimate parameters by minimizing SSE...
+SSE=function(para) {
+Rpred=model(Sobs,para)
+return(sum((Rpred-Robs)^2))
+}
+ans=nlminb(para0, SSE)
+ans
+# check for convergence (code=0) or an error
+ans$convergence
+ans$message
+# So, it did not converge. Sometimes, especially with numerical
+# data minimizing the log of the objective function (here SSE)
+# will be more numerically stable. We can define a new function
+# to help without recoding SSE from scratch...
+logSSE=function(para) { log(SSE(para)) } # quick function def.
+# B. Now minimize the new objective function and check convergence...
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+# It should have converged. But does that mean that we have a good
+# answer? If we check, it seems to have converged after a single
+# iteration! Unlikely...
+ans$iterations
+a=ans$par[1]; b=ans$par[2]
+s=1:200000
+plot(s,(a*s)/(b+s), type="l")
+points(Sobs,Robs,pch=19)
+para0=c(3598956, 9800)
+ans=nlminb(para0, logSSE)
+ans
+ans$convergence
+ans$message
+ans$iterations
+a=ans$par[1]; b=ans$par[2]
+s=1:200000
+plot(s,(a*s)/(b+s), type="l")
+points(Sobs,Robs,pch=19)
+n=length(count)
+habitat=c(0,0,0,1,1,1)
+count=c(5,7,3,1,2,1)
+n=length(count)
+setwd("C:/Github/Directories/TestSite")
