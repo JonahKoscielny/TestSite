@@ -1,8 +1,0 @@
----
-title: "Schaefer-IFD ABM Tables and plots"
-
-output:
-  html_document:
-    df_print: paged
-    code_folding: hide
----
